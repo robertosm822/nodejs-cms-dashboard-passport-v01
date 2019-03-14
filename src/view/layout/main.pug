@@ -1,0 +1,412 @@
+doctype html
+head
+  title Dashboard 
+  // HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries
+  // WARNING: Respond.js doesn't work if you view the page via file://
+  //if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  // Meta
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='description', content='Gradient Able Bootstrap admin template made using Bootstrap 4. The starter version of Gradient Able is completely free for personal project.')
+  meta(name='keywords', content='free dashboard template, free admin, free bootstrap template, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive')
+  meta(name='author', content='codedthemes')
+  // Favicon icon
+  link(rel='icon', href='images/favicon.ico', type='image/x-icon')
+  // Google font
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600', rel='stylesheet')
+  // Required Fremwork
+  link(rel='stylesheet', type='text/css', href='css/bootstrap/css/bootstrap.min.css')
+  // themify-icons line icon
+  link(rel='stylesheet', type='text/css', href='icon/themify-icons/themify-icons.css')
+  link(rel='stylesheet', type='text/css', href='icon/font-awesome/css/font-awesome.min.css')
+  // ico font
+  link(rel='stylesheet', type='text/css', href='icon/icofont/css/icofont.css')
+  // Style.css
+  link(rel='stylesheet', type='text/css', href='css/style.css')
+  link(rel='stylesheet', type='text/css', href='css/jquery.mCustomScrollbar.css')
+.fixed-button
+  a.btn.btn-md.btn-primary(href='https://codedthemes.com/item/gradient-able-admin-template', target='_blank')
+    i.fa.fa-shopping-cart(aria-hidden='true')
+    |  Upgrade To Pro
+// Pre-loader start
+.theme-loader
+  .loader-track
+    .loader-bar
+// Pre-loader end
+#pcoded.pcoded
+  .pcoded-overlay-box
+  .pcoded-container.navbar-wrapper
+    nav.navbar.header-navbar.pcoded-header
+      .navbar-wrapper
+        .navbar-logo
+          a#mobile-collapse.mobile-menu(href='#!')
+            i.ti-menu
+          .mobile-search
+            .header-search
+              .main-search.morphsearch-search
+                .input-group
+                  span.input-group-addon.search-close
+                    i.ti-close
+                  input.form-control(type='text', placeholder='Enter Keyword')
+                  span.input-group-addon.search-btn
+                    i.ti-search
+          a(href='index.html')
+            img.img-fluid(src='images/logo.png', alt='Theme-Logo')
+          a.mobile-options
+            i.ti-more
+        .navbar-container.container-fluid
+          ul.nav-left
+            li
+              .sidebar_toggle
+                a(href='javascript:void(0)')
+                  i.ti-menu
+            li.header-search
+              .main-search.morphsearch-search
+                .input-group
+                  span.input-group-addon.search-close
+                    i.ti-close
+                  input.form-control(type='text')
+                  span.input-group-addon.search-btn
+                    i.ti-search
+            li
+              a(href='#!', onclick='javascript:toggleFullScreen()')
+                i.ti-fullscreen
+          ul.nav-right
+            li.header-notification
+              a(href='#!')
+                i.ti-bell
+                span.badge.bg-c-pink
+              ul.show-notification
+                li
+                  h6 Notifications
+                  label.label.label-danger New
+                li
+                  .media
+                    img.d-flex.align-self-center.img-radius(src='images/avatar-2.jpg', alt='Generic placeholder image')
+                    .media-body
+                      h5.notification-user John Doe
+                      p.notification-msg Lorem ipsum dolor sit amet, consectetuer elit.
+                      span.notification-time 30 minutes ago
+                li
+                  .media
+                    img.d-flex.align-self-center.img-radius(src='images/avatar-4.jpg', alt='Generic placeholder image')
+                    .media-body
+                      h5.notification-user Joseph William
+                      p.notification-msg Lorem ipsum dolor sit amet, consectetuer elit.
+                      span.notification-time 30 minutes ago
+                li
+                  .media
+                    img.d-flex.align-self-center.img-radius(src='images/avatar-3.jpg', alt='Generic placeholder image')
+                    .media-body
+                      h5.notification-user Sara Soudein
+                      p.notification-msg Lorem ipsum dolor sit amet, consectetuer elit.
+                      span.notification-time 30 minutes ago
+            li.user-profile.header-notification
+              a(href='#!')
+                img.img-radius(src='images/avatar-4.jpg', alt='User-Profile-Image')
+                span John Doe
+                i.ti-angle-down
+              ul.show-notification.profile-notification
+                li
+                  a(href='#!')
+                    i.ti-settings
+                    |  Settings
+                li
+                  a(href='user-profile.html')
+                    i.ti-user
+                    |  Profile
+                li
+                  a(href='auth-lock-screen.html')
+                    i.ti-lock
+                    |  Lock Screen
+                li
+                  a(href='auth-normal-sign-in.html')
+                    i.ti-layout-sidebar-left
+                    |  Logout
+    .pcoded-main-container
+      .pcoded-wrapper
+        nav.pcoded-navbar
+          .sidebar_toggle
+            a(href='#')
+              i.icon-close.icons
+          .pcoded-inner-navbar.main-menu
+            .pcoded-navigatio-lavel(data-i18n='nav.category.navigation') Layout
+            ul.pcoded-item.pcoded-left-item
+              li.active
+                a(href='index.html')
+                  span.pcoded-micon
+                    i.ti-home
+                    b D
+                  span.pcoded-mtext(data-i18n='nav.dash.main') Dashboard
+                  span.pcoded-mcaret
+              li.pcoded-hasmenu
+                a(href='javascript:void(0)')
+                  span.pcoded-micon
+                    i.ti-layout-grid2-alt
+                  span.pcoded-mtext(data-i18n='nav.basic-components.main') Components
+                  span.pcoded-mcaret
+                ul.pcoded-submenu
+                  li.
+                    a(href='accordion.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Accordion
+                      span.pcoded-mcaret
+                  li.
+                    a(href='breadcrumb.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Breadcrumbs
+                      span.pcoded-mcaret
+                  li.
+                    a(href='button.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Button
+                      span.pcoded-mcaret
+                  li.
+                    a(href='tabs.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Tabs
+                      span.pcoded-mcaret
+                  li.
+                    a(href='color.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Color
+                      span.pcoded-mcaret
+                  li.
+                    a(href='label-badge.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Label Badge
+                      span.pcoded-mcaret
+                  li.
+                    a(href='tooltip.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Tooltip
+                      span.pcoded-mcaret
+                  li.
+                    a(href='typography.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Typography
+                      span.pcoded-mcaret
+                  li.
+                    a(href='notification.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Notification
+                      span.pcoded-mcaret
+                  li.
+                    a(href='icon-themify.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Themify
+                      span.pcoded-mcaret
+            .pcoded-navigatio-lavel(data-i18n='nav.category.forms') Forms &amp; Tables
+            ul.pcoded-item.pcoded-left-item
+              li
+                a(href='form-elements-component.html')
+                  span.pcoded-micon
+                    i.ti-layers
+                    b FC
+                  span.pcoded-mtext(data-i18n='nav.form-components.main') Form Components
+                  span.pcoded-mcaret
+              li
+                a(href='bs-basic-table.html')
+                  span.pcoded-micon
+                    i.ti-layers
+                    b FC
+                  span.pcoded-mtext(data-i18n='nav.form-components.main') Basic Table
+                  span.pcoded-mcaret
+            .pcoded-navigatio-lavel(data-i18n='nav.category.forms') Chart &amp; Maps
+            ul.pcoded-item.pcoded-left-item
+              li
+                a(href='chart.html')
+                  span.pcoded-micon
+                    i.ti-layers
+                    b FC
+                  span.pcoded-mtext(data-i18n='nav.form-components.main') Chart
+                  span.pcoded-mcaret
+              li
+                a(href='map-google.html')
+                  span.pcoded-micon
+                    i.ti-layers
+                    b FC
+                  span.pcoded-mtext(data-i18n='nav.form-components.main') Maps
+                  span.pcoded-mcaret
+              li.pcoded-hasmenu
+                a(href='javascript:void(0)')
+                  span.pcoded-micon
+                    i.ti-layout-grid2-alt
+                  span.pcoded-mtext(data-i18n='nav.basic-components.main') Pages
+                  span.pcoded-mcaret
+                ul.pcoded-submenu
+                  li.
+                    a(href='auth-normal-sign-in.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.alert') Login
+                      span.pcoded-mcaret
+                  li.
+                    a(href='auth-sign-up.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Register
+                      span.pcoded-mcaret
+                  li.
+                    a(href='sample-page.html')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.basic-components.breadcrumbs') Sample Page
+                      span.pcoded-mcaret
+            .pcoded-navigatio-lavel(data-i18n='nav.category.other') Other
+            ul.pcoded-item.pcoded-left-item
+              li.pcoded-hasmenu
+                a(href='javascript:void(0)')
+                  span.pcoded-micon
+                    i.ti-direction-alt
+                    b M
+                  span.pcoded-mtext(data-i18n='nav.menu-levels.main') Menu Levels
+                  span.pcoded-mcaret
+                ul.pcoded-submenu
+                  li
+                    a(href='javascript:void(0)')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.menu-levels.menu-level-21') Menu Level 2.1
+                      span.pcoded-mcaret
+                  li.pcoded-hasmenu
+                    a(href='javascript:void(0)')
+                      span.pcoded-micon
+                        i.ti-direction-alt
+                      span.pcoded-mtext(data-i18n='nav.menu-levels.menu-level-22.main') Menu Level 2.2
+                      span.pcoded-mcaret
+                    ul.pcoded-submenu
+                      li
+                        a(href='javascript:void(0)')
+                          span.pcoded-micon
+                            i.ti-angle-right
+                          span.pcoded-mtext(data-i18n='nav.menu-levels.menu-level-22.menu-level-31') Menu Level 3.1
+                          span.pcoded-mcaret
+                  li
+                    a(href='javascript:void(0)')
+                      span.pcoded-micon
+                        i.ti-angle-right
+                      span.pcoded-mtext(data-i18n='nav.menu-levels.menu-level-23') Menu Level 2.3
+                      span.pcoded-mcaret
+        .pcoded-content
+          .pcoded-inner-content
+            .main-body
+              .page-wrapper
+                .page-body
+                  .row
+                    // order-card start
+                    .col-md-6.col-xl-3
+                      .card.bg-c-blue.order-card
+                        .card-block
+                          h6.m-b-20 Orders Received
+                          h2.text-right
+                            i.ti-shopping-cart.f-left
+                            span 486
+                          p.m-b-0
+                            | Completed Orders
+                            span.f-right 351
+                    .col-md-6.col-xl-3
+                      .card.bg-c-green.order-card
+                        .card-block
+                          h6.m-b-20 Total Sales
+                          h2.text-right
+                            i.ti-tag.f-left
+                            span 1641
+                          p.m-b-0
+                            | This Month
+                            span.f-right 213
+                    .col-md-6.col-xl-3
+                      .card.bg-c-yellow.order-card
+                        .card-block
+                          h6.m-b-20 Revenue
+                          h2.text-right
+                            i.ti-reload.f-left
+                            span $42,562
+                          p.m-b-0
+                            | This Month
+                            span.f-right $5,032
+                    .col-md-6.col-xl-3
+                      .card.bg-c-pink.order-card
+                        .card-block
+                          h6.m-b-20 Total Profit
+                          h2.text-right
+                            i.ti-wallet.f-left
+                            span $9,562
+                          p.m-b-0
+                            | This Month
+                            span.f-right $542
+                    // order-card end
+                    // statustic and process start
+                    .col-lg-8.col-md-12
+                      block content
+                    // users visite and profile start
+                #styleSelector
+  // Warning Section Starts
+  // Older IE warning message
+  //if lt IE 9
+    .ie-warning
+      h1 Warning!!
+      p
+        | You are using an outdated version of Internet Explorer, please upgrade 
+        br
+        | to any of the following web browsers to access this website.
+      .iew-container
+        ul.iew-download
+          li
+            a(href='http://www.google.com/chrome/')
+              img(src='images/browser/chrome.png', alt='Chrome')
+              div Chrome
+          li
+            a(href='https://www.mozilla.org/en-US/firefox/new/')
+              img(src='images/browser/firefox.png', alt='Firefox')
+              div Firefox
+          li
+            a(href='http://www.opera.com')
+              img(src='images/browser/opera.png', alt='Opera')
+              div Opera
+          li
+            a(href='https://www.apple.com/safari/')
+              img(src='images/browser/safari.png', alt='Safari')
+              div Safari
+          li
+            a(href='http://windows.microsoft.com/en-us/internet-explorer/download-ie')
+              img(src='images/browser/ie.png', alt='')
+              div IE (9 &amp; above)
+      p Sorry for the inconvenience!
+  // Warning Section Ends
+  // Required Jquery
+  script(type='text/javascript', src='js/jquery/jquery.min.js')
+  script(type='text/javascript', src='js/jquery-ui/jquery-ui.min.js')
+  script(type='text/javascript', src='js/popper.js/popper.min.js')
+  script(type='text/javascript', src='js/bootstrap/js/bootstrap.min.js')
+  // jquery slimscroll js
+  script(type='text/javascript', src='js/jquery-slimscroll/jquery.slimscroll.js')
+  // modernizr js
+  script(type='text/javascript', src='js/modernizr/modernizr.js')
+  // am chart
+  script(src='pages/widget/amchart/amcharts.min.js')
+  script(src='pages/widget/amchart/serial.min.js')
+  // Chart js
+  script(type='text/javascript', src='js/chart.js/Chart.js')
+  // Todo js
+  script(type='text/javascript ', src='pages/todo/todo.js ')
+  // Custom js
+  script(type='text/javascript', src='pages/dashboard/custom-dashboard.min.js')
+  script(type='text/javascript', src='js/script.js')
+  script(type='text/javascript ', src='js/SmoothScroll.js')
+  script(src='js/pcoded.min.js')
+  script(src='js/vartical-demo.js')
+  script(src='js/jquery.mCustomScrollbar.concat.min.js')
